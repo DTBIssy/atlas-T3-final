@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caves</title>
+  <link rel="stylesheet" href="stlyes/landing.css">
+</head>
+
+<body>
+  <!--Cave Landing-->
+  <section>
+    <div class="spacer"></div>
+
+    <div class="gallery">
+      <div class="left">
+        <div class="desktopContent">
+          <div class="desktopContentSection">
+            <div class="spacer_0"></div>
+            <div class="box a" style="opacity: 0;">
+              <h1 class="h1-text">Who are we</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore cum ratione, earum voluptatem ullam
+                sint cumque, hic tenetur delectus quaerat, impedit quae voluptatum maiores temporibus iste explicabo
+                cupiditate officiis eum?</p>
+            </div>
+            <div class="spacer_0"></div>
+            <div class="box b" style="left: -100px;">
+              <h1 class="h1-text">Who are we</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore cum ratione, earum voluptatem ullam
+                sint cumque, hic tenetur delectus quaerat, impedit quae voluptatum maiores temporibus iste explicabo
+                cupiditate officiis eum?</p>
+            </div>
+            <div class="spacer_0"></div>
+            <div class=" box c">
+              <h1 class="h1-text">Who are we</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore cum ratione, earum voluptatem ullam
+                sint cumque, hic tenetur delectus quaerat, impedit quae voluptatum maiores temporibus iste explicabo
+                cupiditate officiis eum?</p>
+            </div>
+            <div class="spacer_0"></div>
+            <div class="boc d">
+              <h1 class="h1-text">Who are we</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore cum ratione, earum voluptatem ullam
+                sint cumque, hic tenetur delectus quaerat, impedit quae voluptatum maiores temporibus iste explicabo
+                cupiditate officiis eum?</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="right">
+
+        <!-- mobile content -->
+        <!-- desktop content -->
+
+        <div class="desktopPhotos">
+          <div class="desktopPhoto"><img src="images/andrew-svk-pr8yi21xxcI-unsplash.jpg" alt=""></div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+
+  <script>
+    const tl = gsap.timeline();
+
+    tl.to(".a", {
+      scrollTrigger: {
+        trigger: ".a",
+        start: "top center",
+        end: "bottom 100px",
+        scrub: true,
+        // markers: true,
+      }, opacity: 10,
+    })
+      .to(".b", {
+        scrollTrigger: {
+          trigger: ".b",
+          start: "top center",
+          end: "bottom 100px",
+          scrub: true,
+          markers: true,
+        }, x: '0',
+        ease: "none",
+        duration: 2
+      })
+
+    gsap.to('.c', {
+      scrollTrigger: {
+        trigger: ".right",
+        start: "top",
+        end: "bottom 80%",
+        endTrigger: ".d",
+        scrub: 1,
+        pin: ".desktopPhoto",
+        // markers: true,
+      },
+      rotation: 360,
+      duration: 3
+    })
+
+
+  </script>
+
+  <script>
+
+    //smooths scroll
+
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+      direction: 'vertical', // vertical, horizontal
+      gestureDirection: 'vertical', // vertical, horizontal, both
+      smooth: true,
+      mouseMultiplier: 1,
+      smoothTouch: false,
+      touchMultiplier: 2,
+      infinite: false,
+    })
+
+    //get scroll value
+    lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+      console.log({ scroll, limit, velocity, direction, progress })
+    })
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+  </script>
+</body>
+
+</html>
