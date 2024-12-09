@@ -7,8 +7,14 @@ body {
 
 .spacer {
 	width:100%;
+	height:100vh;
+	background:#181817;
+}
+
+.spacer_bottom {
+	width:100%;
 	height:50vh;
-	background:#ddd;
+	background:grey;
 }
 
 .spacer_0 {

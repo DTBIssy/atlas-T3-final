@@ -11,7 +11,9 @@
 <body>
   <!--Cave Landing-->
   <section>
-    <div class="spacer"></div>
+    <div class="spacer">
+
+    </div>
 
     <div class="gallery">
       <div class="left">
@@ -90,25 +92,28 @@
           start: "top center",
           end: "bottom 100px",
           scrub: true,
-          markers: true,
+          // markers: true,
         }, x: '0',
         ease: "none",
         duration: 2
       })
 
-    gsap.to('.c', {
+    gsap.to('.right', {
       scrollTrigger: {
         trigger: ".right",
         start: "top",
-        end: "bottom 80%",
+        end: "bottom 50%",
         endTrigger: ".d",
         scrub: 1,
         pin: ".desktopPhoto",
-        // markers: true,
+        markers: true,
       },
-      rotation: 360,
-      duration: 3
+      opacity: 0, ease: 'power3.in'
     })
+
+    //Add another cave picture here as a link but also a entrance to the cave which leads to the index.
+
+
 
 
   </script>
