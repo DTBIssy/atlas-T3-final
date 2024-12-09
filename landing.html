@@ -63,10 +63,14 @@
 
       </div>
     </div>
-
-
-
     <div class="spacer"></div>
+
+
+    <!-- <div class="spacer"></div> -->
+
+  </section>
+  <!-- Join Us Part of the landing page -->
+  <section>
 
   </section>
 
@@ -93,7 +97,7 @@
     }).to(".b", {
       scrollTrigger: {
         trigger: ".b",
-        start: "top center",
+        start: "top -100px",
         end: "bottom 100px",
         scrub: true,
         pin: ".left",
@@ -103,12 +107,12 @@
     gsap.to('.right', {
       scrollTrigger: {
         trigger: ".right",
-        start: "top",
-        end: "bottom 50%",
+        start: "top 15%%",
+        end: "bottom -15px",
         endTrigger: ".d",
         scrub: 1,
         pin: ".desktopPhotos",
-        // markers: true,
+        markers: true,
       },
       opacity: 0, ease: 'power3.in'
     })
