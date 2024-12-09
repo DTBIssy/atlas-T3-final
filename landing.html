@@ -26,23 +26,23 @@
                 sint cumque, hic tenetur delectus quaerat, impedit quae voluptatum maiores temporibus iste explicabo
                 cupiditate officiis eum?</p>
             </div>
-            <div class="spacer_0"></div>
-            <div class="box b" style="left: -100px;">
-              <h1 class="h1-text">Who are we</h1>
+            <div class="spacer_0" id="spa_0"></div>
+            <div class="box b" style="opacity: 0;">
+              <h1 class="h1-text">Second</h1>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore cum ratione, earum voluptatem ullam
                 sint cumque, hic tenetur delectus quaerat, impedit quae voluptatum maiores temporibus iste explicabo
                 cupiditate officiis eum?</p>
             </div>
             <div class="spacer_0"></div>
             <div class=" box c">
-              <h1 class="h1-text">Who are we</h1>
+              <h1 class="h1-text">Third</h1>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore cum ratione, earum voluptatem ullam
                 sint cumque, hic tenetur delectus quaerat, impedit quae voluptatum maiores temporibus iste explicabo
                 cupiditate officiis eum?</p>
             </div>
             <div class="spacer_0"></div>
-            <div class="boc d">
-              <h1 class="h1-text">Who are we</h1>
+            <div class="box d">
+              <h1 class="h1-text"> 4</h1>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore cum ratione, earum voluptatem ullam
                 sint cumque, hic tenetur delectus quaerat, impedit quae voluptatum maiores temporibus iste explicabo
                 cupiditate officiis eum?</p>
@@ -65,7 +65,7 @@
     </div>
 
 
-    <div class="spacer"></div>
+
     <div class="spacer"></div>
 
   </section>
@@ -75,6 +75,10 @@
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
 
   <script>
+
+    ScrollTrigger.defaults({
+      toggleActions: "play none reverse play",
+    });
     const tl = gsap.timeline();
 
     tl.to(".a", {
@@ -83,21 +87,19 @@
         start: "top center",
         end: "bottom 100px",
         scrub: true,
+        pin: "#spa_0",
+        // markers: true,
+      }, opacity: 10,
+    }).to(".b", {
+      scrollTrigger: {
+        trigger: ".b",
+        start: "top center",
+        end: "bottom 100px",
+        scrub: true,
+        pin: ".left",
         // markers: true,
       }, opacity: 10,
     })
-      .to(".b", {
-        scrollTrigger: {
-          trigger: ".b",
-          start: "top center",
-          end: "bottom 100px",
-          scrub: true,
-          // markers: true,
-        }, x: '0',
-        ease: "none",
-        duration: 2
-      })
-
     gsap.to('.right', {
       scrollTrigger: {
         trigger: ".right",
@@ -105,8 +107,8 @@
         end: "bottom 50%",
         endTrigger: ".d",
         scrub: 1,
-        pin: ".desktopPhoto",
-        markers: true,
+        pin: ".desktopPhotos",
+        // markers: true,
       },
       opacity: 0, ease: 'power3.in'
     })
@@ -134,10 +136,10 @@
       infinite: false,
     })
 
-    //get scroll value
-    lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
-      console.log({ scroll, limit, velocity, direction, progress })
-    })
+    // //get scroll value
+    // lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+    //   console.log({ scroll, limit, velocity, direction, progress })
+    // })
 
     function raf(time) {
       lenis.raf(time)
