@@ -1,6 +1,6 @@
 body {
 	background:#181817;
-	margin:0;
+	/* margin:0; */
 	font-family:sans-serif;
 	color:#333;
 }
@@ -38,6 +38,7 @@ body {
 .gallery {
   display:flex;
   /* outline:1px solid red; */
+	margin-bottom: 50ox;
 }
 
 .left {
@@ -88,6 +89,28 @@ body {
 	left: -200px;
 }
 
+.a {
+	opacity: 0;
+}
+.b {
+	opacity: 0;
+}
+.c {
+	opacity: 0;
+}
+.d {
+	opacity: 10;
+}
+
+/* Join section */
+
+#Join {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 /* small screen / mobile layout */
 .mobileContent {

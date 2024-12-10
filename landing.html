@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Caves</title>
+  <!-- Semantic Ui -->
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <!-- Custom Css -->
   <link rel="stylesheet" href="stlyes/landing.css">
 </head>
 
@@ -20,14 +23,14 @@
         <div class="desktopContent">
           <div class="desktopContentSection">
             <div class="spacer_0"></div>
-            <div class="box a" style="opacity: 0;">
+            <div class="box a">
               <h1 class="h1-text">Who are we</h1>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore cum ratione, earum voluptatem ullam
                 sint cumque, hic tenetur delectus quaerat, impedit quae voluptatum maiores temporibus iste explicabo
                 cupiditate officiis eum?</p>
             </div>
             <div class="spacer_0" id="spa_0"></div>
-            <div class="box b" style="opacity: 0;">
+            <div class="box b">
               <h1 class="h1-text">Second</h1>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore cum ratione, earum voluptatem ullam
                 sint cumque, hic tenetur delectus quaerat, impedit quae voluptatum maiores temporibus iste explicabo
@@ -63,69 +66,44 @@
 
       </div>
     </div>
-    <div class="spacer"></div>
-
 
     <!-- <div class="spacer"></div> -->
 
   </section>
   <!-- Join Us Part of the landing page -->
-  <section>
+  <section id="Join">
+    <div class="join_page">
+      <div class="ui form">
+        <div class="three fields">
+          <div class="field">
+            <label>First name</label>
+            <input type="text" placeholder="First Name">
+          </div>
+          <div class="field">
+            <label>Middle name</label>
+            <input type="text" placeholder="Middle Name">
+          </div>
+          <div class="field">
+            <label>Last name</label>
+            <input type="text" placeholder="Last Name">
+          </div>
+        </div>
+      </div>
+    </div>
 
   </section>
-
+  <!-- Gsap Javascript -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+  <!-- Semantic UI Javascript -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+  <!-- Custom Script -->
+  <script src="landing.js"></script>
 
   <script>
-
-    ScrollTrigger.defaults({
-      toggleActions: "play none reverse play",
-    });
-    const tl = gsap.timeline();
-
-    tl.to(".a", {
-      scrollTrigger: {
-        trigger: ".a",
-        start: "top center",
-        end: "bottom 100px",
-        scrub: true,
-        pin: "#spa_0",
-        // markers: true,
-      }, opacity: 10,
-    }).to(".b", {
-      scrollTrigger: {
-        trigger: ".b",
-        start: "top -100px",
-        end: "bottom 100px",
-        scrub: true,
-        pin: ".left",
-        // markers: true,
-      }, opacity: 10,
-    })
-    gsap.to('.right', {
-      scrollTrigger: {
-        trigger: ".right",
-        start: "top 15%%",
-        end: "bottom -15px",
-        endTrigger: ".d",
-        scrub: 1,
-        pin: ".desktopPhotos",
-        markers: true,
-      },
-      opacity: 0, ease: 'power3.in'
-    })
-
-    //Add another cave picture here as a link but also a entrance to the cave which leads to the index.
-
-
-
-
-  </script>
-
-  <script>
-
     //smooths scroll
 
     const lenis = new Lenis({
