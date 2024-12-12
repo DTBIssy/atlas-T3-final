@@ -1,3 +1,5 @@
+:root { scroll-behavior: auto !important; }
+
 body {
 	background:#181817;
 	/* margin:0; */
@@ -20,6 +22,11 @@ body {
 .spacer_0 {
 	width: 100%;
 	height: 100vh;
+}
+
+.spacer_1 {
+	width: 100%;
+	height: 50vh;
 }
 
 
@@ -82,9 +89,11 @@ body {
 	margin-left: auto;
 }
 
-.desktopPhoto img {
+.photo img {
 	width: 100vh;
 }
+
+
 .b {
 	left: -200px;
 }
@@ -107,49 +116,40 @@ body {
 #Join {
 	height: 100vh;
 	width: 100%;
+
+}
+
+#apply-div {
+	margin-bottom: 25vh;
+}
+
+.apply {
+	position: relative;
+	left : 10vw;
+	padding-top: 10vh;
+	align-items: flex-start;
+	font-size: 4rem;
+	opacity: 100;
+	width: fit-content;
+}
+
+
+.join_page {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-/* small screen / mobile layout */
-.mobileContent {
-	display:none;
-	width:80vw;
+#join_us {
+	text-decoration: none;
+	color: white;
+	border-style: solid;
+	border-radius: 2.5px;
+	border-color: white;
+	background-color: white;
+	border-radius: ;
 }
 
-.mobilePhoto {
-	width:80vw;
-	height:80vw;
-	margin-top:5em;
-	border-radius:6vw;
+#join_us {
+	color: black;
 }
-
-
-
-
-
-
-/* defines styles for screens up to 599px wide */
-@media screen and (max-width: 599px) {
-	.left {
-		display:none;
-	}
-
-	.right {
-		height:auto;
-		width:100%;
-		align-items:center;
-	}
-
-	.desktopPhotos {
-		display:none;
-	}
-
-	.mobileContent {
-		display:block;
-	}
-
-
-}
-
