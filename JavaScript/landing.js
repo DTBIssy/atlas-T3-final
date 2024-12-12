@@ -51,6 +51,17 @@ gsap.to('.right', {
     // markers: true,
   },
 })
+gsap.to('.right', {
+  scrollTrigger: {
+    trigger: ".right",
+    start: "top 15%%",
+    end: "bottom -15px",
+    endTrigger: ".a",
+    scrub: 1,
+    pin: ".desktopPhotos2",
+    // markers: true,
+  },
+})
 
 gsap.from('.apply', {
   scrollTrigger:{

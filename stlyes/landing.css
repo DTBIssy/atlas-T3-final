@@ -11,7 +11,9 @@ body {
 	width:100%;
 	height:100vh;
 	background:#181817;
+	color: white;
 }
+
 
 .spacer_bottom {
 	width:100%;
@@ -74,6 +76,15 @@ body {
 
 
 .desktopPhotos {
+	width:60vw;
+	height:40vw;
+
+	position:relative;
+	overflow:hidden;
+
+}
+
+.desktopPhotos2 {
 	width:60vw;
 	height:40vw;
 
@@ -153,3 +164,5 @@ body {
 #join_us {
 	color: black;
 }
+
+
