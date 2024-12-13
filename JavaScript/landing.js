@@ -93,7 +93,7 @@ gsap.from('.page_wrap', {
     trigger:".page_wrap",
     start: "top 70%",
     end: "bottom ",
-    markers: true,
+    // markers: true,
   }, duration: 3, opacity: 0,
 })
 
