@@ -3,6 +3,7 @@ ScrollTrigger.defaults({
 });
 const tl = gsap.timeline();
 
+// All the texts
 tl.to(".a", {
   scrollTrigger: {
     trigger: ".a",
@@ -10,7 +11,7 @@ tl.to(".a", {
     end: "bottom center",
     scrub: true,
     pin: "#spa_0",
-    markers: true,
+    // markers: true,
   }, opacity: 1,
 }).to(".b", {
   scrollTrigger: {
@@ -33,23 +34,25 @@ tl.to(".a", {
   scrollTrigger: {
     trigger: ".d",
     start: "top 45%",
-    bottom: "bottom ",
+    bottom: "bottom 100px",
     scrub: true,
     // markers: true,
-    // pin: ".d",
+    pin: ".d",
   }, opacity: 0,
 })
 
+
+// Pins the image on the right
 gsap.to('.right', {
   scrollTrigger: {
     trigger: ".right",
     start: "top 15%%",
-    end: "bottom -15px",
-    endTrigger: ".a",
+    end: "bottom -100px",
+    endTrigger: ".d",
     scrub: 1,
     pin: ".desktopPhotos",
     // markers: true,
-  },
+  }, opacity: 0, ease: "power4.in"
 })
 gsap.to('.right', {
   scrollTrigger: {
@@ -58,11 +61,12 @@ gsap.to('.right', {
     end: "bottom -15px",
     endTrigger: ".a",
     scrub: 1,
-    pin: ".desktopPhotos2",
+    // pin: ".desktopPhotos",
     // markers: true,
   },
 })
 
+//Apply Section
 gsap.from('.apply', {
   scrollTrigger:{
     toggleActions: "play none none reverse",
@@ -71,6 +75,16 @@ gsap.from('.apply', {
     end: "bottom center",
     //  markers: true,
   }, duration: 2, ease: "power4.out", left: "-150vw", opacity: 0,
+})
+
+gsap.from('#apply_sect', {
+  scrollTrigger:{
+    toggleActions: "play none none reverse",
+    trigger:"#end",
+    start: "top 70%",
+    end: "bottom center",
+    markers: true,
+  }, duration: 2, opacity: 0
 })
 
 
@@ -86,6 +100,10 @@ $(document).ready(function () {
     event.preventDefault();
     window
   })
+
+  let username = Cookies.get('FirstName') + " " + Cookies.get("LastName")
+
+  $(`#username`).text("Hello, " + username)
 
 })
 
