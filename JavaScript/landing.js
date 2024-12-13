@@ -83,9 +83,20 @@ gsap.from('#apply_sect', {
     trigger:"#end",
     start: "top 70%",
     end: "bottom center",
-    markers: true,
+    // markers: true,
   }, duration: 2, opacity: 0
 })
+
+gsap.from('.page_wrap', {
+  scrollTrigger:{
+    toggleActions: "play none none reverse",
+    trigger:".page_wrap",
+    start: "top 70%",
+    end: "bottom ",
+    markers: true,
+  }, duration: 3, opacity: 0,
+})
+
 
 
 
@@ -102,8 +113,15 @@ $(document).ready(function () {
   })
 
   let username = Cookies.get('FirstName') + " " + Cookies.get("LastName")
+  let email = Cookies.get('Email')
+  let about = Cookies.get('About')
+  let password = Cookies.get('Password')
+
 
   $(`#username`).text("Hello, " + username)
+  $(`.username`).text(username)
+  $('#Email').text(email)
+  $('#about').text(about)
 
 })
 

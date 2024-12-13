@@ -21,8 +21,8 @@
         <p style="color: white;" id="username"></p>
         <li style="float:right; z-index: 1">
           <a href="#Application">Application status</a>
-          <a class="active" href="#about">About us</a>
-          <a class="active" href="#about">Profile</a>
+          <a class="active" href="landing.html">About us</a>
+          <a class="active" href="#">Profile</a>
         </li>
       </ul>
     </div>
@@ -53,38 +53,25 @@
                 <div class="spacer_0"></div>
                 <div class="box a">
                   <h1 class="h1-text">Who are we</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore cum ratione, earum voluptatem
-                    ullam
-                    sint cumque, hic tenetur delectus quaerat, impedit quae voluptatum maiores temporibus iste
-                    explicabo
-                    cupiditate officiis eum?</p>
+                  <p>We are the same Rock and Roll you know. Rocks and all. Except this time, like the rocks we enjoy,
+                    we are bigger and better than ever. And our next plan is our boldest yet.</p>
                 </div>
                 <div class="spacer_0" id="spa_0"></div>
                 <div class="box b">
-                  <h1 class="h1-text">Second</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore cum ratione, earum voluptatem
-                    ullam
-                    sint cumque, hic tenetur delectus quaerat, impedit quae voluptatum maiores temporibus iste
-                    explicabo
-                    cupiditate officiis eum?</p>
+                  <h1 class="h1-text">The Plan</h1>
+                  <p>The Plan is simple. But Grand. Nothing ventured nothing gained. And a whole lot of the rocks you
+                    love </p>
                 </div>
                 <div class="spacer_0"></div>
                 <div class=" box c">
-                  <h1 class="h1-text">Third</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore cum ratione, earum voluptatem
-                    ullam
-                    sint cumque, hic tenetur delectus quaerat, impedit quae voluptatum maiores temporibus iste
-                    explicabo
-                    cupiditate officiis eum?</p>
+                  <h1 class="h1-text">Expertise</h1>
+                  <p>We have over 15 professionals involved in this next mission. We are attempting something that has
+                    never been done</p>
                 </div>
                 <div class="spacer_0"></div>
                 <div class="box d">
-                  <h1 class="h1-text"> 4</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore cum ratione, earum voluptatem
-                    ullam
-                    sint cumque, hic tenetur delectus quaerat, impedit quae voluptatum maiores temporibus iste
-                    explicabo
-                    cupiditate officiis eum?</p>
+                  <h1 class="h1-text"> The Dive</h1>
+                  <p>Are you ready?</p>
                 </div>
               </div>
 
@@ -101,7 +88,19 @@
     <section>
       <div class="page_wrap">
         <div id="page_temp">
-
+          <h1 class="app_h">
+            Application Submitted</h1>
+          <div class="app_info">
+            <h3 class="username">
+              </h2>
+              <h2 id="Email"></h2>
+          </div>
+          <div id="about-container">
+            <h2 id="who">Who are you</h1>
+              <h3 id="about">
+                </p>
+          </div>
+          </h1>
         </div>
       </div>
     </section>
@@ -138,13 +137,13 @@
       requestAnimationFrame(raf)
 
       function saveScrollPosition() {
-        localStorage.setItem('scrollPosition', window.pageYOffset);
+        sessionStorage.setItem('scrollPosition', window.pageYOffset);
       }
 
       // Function to restore scroll position
       function restoreScrollPosition() {
-        if (localStorage.getItem('scrollPosition')) {
-          window.scrollTo(0, parseInt(localStorage.getItem('scrollPosition')));
+        if (sessionStorage.getItem('scrollPosition')) {
+          window.scrollTo(0, parseInt(sessionStorage.getItem('scrollPosition')));
         }
       }
 

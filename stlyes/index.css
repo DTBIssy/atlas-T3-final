@@ -228,7 +228,47 @@ li a:hover {
 	margin-bottom: auto;
 	margin-top: auto;
 	height: 50vh;
-	width: 75vw;
-	background-color: white;
+	width: 50vw;
+	background-color: #C0C0C0;
+	border-radius: 30px;
 }
+
+.app_h {
+	padding-top: 2.5vh;
+	padding-left: 10%;
+	padding-bottom: 2.5vh;
+	border-bottom: solid 15px black;
+}
+.app_info {
+	display: flex;
+
+}
+
+
+.username {
+	padding-top: 4vh;
+	margin-left: 10%;
+	text-decoration: underline;
+}
+#Email {
+	padding-top: 4vh;
+	margin-left: 25%;
+	text-decoration: underline;
+}
+
+#who {
+	padding-top: 7.5vh;
+	margin-left: 10%;
+
+}
+
+#about {
+	width: 60%;
+	margin-left: 10%;
+	margin-right: 50%;
+	padding-top: 2.5vh;
+	padding-bottom: 5vh;
+	color: #333;
+}
+
 

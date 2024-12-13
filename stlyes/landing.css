@@ -165,11 +165,12 @@ header {
 	border-radius: 2.5px;
 	border-color: white;
 	background-color: white;
-	border-radius: ;
+	border-radius: 0;
 }
 
 #join_us {
 	color: black;
+
 }
 
 
