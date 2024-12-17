@@ -10,7 +10,7 @@ feel more alive and interactable. What I've done while creating this website is:
 - Implement GSAP (greensock animations) with Javascript
 - Refine my javascript interactivity and Web Storage capabilities
 - Learned more frameworks in a short time
-- Be proud of how far I've come in a year
+- Be proud
 
 > Mobile and Tablet Screens are currently being implemented. Will be completed on a later date
 
