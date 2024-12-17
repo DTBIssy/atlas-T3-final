@@ -19,10 +19,10 @@ Above it the link to Rock Crawlers Application Website. Join us on our biggest e
 
 ### Authors
 
-(Isaac Edwards)[https://github.com/DTBissy/](Web Designer, Front-End Engineer, and Back-End Engineer)
+[Isaac Edwards](https://github.com/DTBissy/)(Web Designer, Front-End Engineer, and Back-End Engineer)
 Akellom Williams(Concept)
 
 ### Previous Website
 
 My previous website that was made
-(ROck and Roll)[https://dtbissy.github.io/atlas-bootstrap/]
+[ROck and Roll](https://dtbissy.github.io/atlas-bootstrap/)
