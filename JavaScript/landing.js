@@ -100,6 +100,7 @@ gsap.from('.page_wrap', {
 
 
 
+
 $(document).ready(function () {
   let submit = $("button[type=submit]")
 
