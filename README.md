@@ -25,4 +25,4 @@ Above it the link to Rock Crawlers Application Website. Join us on our biggest e
 ### Previous Website
 
 My previous website that was made
-[ROck and Roll](https://dtbissy.github.io/atlas-bootstrap/)
+[Rock and Roll](https://dtbissy.github.io/atlas-bootstrap/)
