@@ -4,7 +4,7 @@ Welcome to the sister company of my previous Rock and Roll Companys. **Rock Craw
 
 ## Goals
 
-With this website I strived to create a website that replicated the cool scroll animations you find on websites like Apple or Google. Another Goal was to implement some basic animations to make the website
+With this I strived to create a website that replicated the cool scroll animations you find on websites like Apple or Google. Another Goal was to implement some basic animations to make the website
 feel more alive and interactable. What I've learned while creating this website:
 
 - How to implement GSAP (greensock animations) with Javascript
