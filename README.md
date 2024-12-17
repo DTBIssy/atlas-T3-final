@@ -4,18 +4,19 @@ Welcome to the sister company of my previous Rock and Roll Companys. **Rock Craw
 
 ## Goals
 
-With this I strived to create a website that replicated the cool scroll animations you find on websites like Apple or Google. Another Goal was to implement some basic animations to make the website
-feel more alive and interactable. What I've learned while creating this website:
+With this, I strived to create a website that replicated the cool scroll animations that you find on websites like Apple or Google. Another Goal was to implement some basic animations to make the website
+feel more alive and interactable. What I've done while creating this website is:
 
-- How to implement GSAP (greensock animations) with Javascript
-- Refining my javascript interactivity and Web Storage capabilities
-- And also how to push my self alittle further over the finish line
+- Implement GSAP (greensock animations) with Javascript
+- Refine my javascript interactivity and Web Storage capabilities
+- Learned more frameworks in a short time
+- Be proud of how far I've come in a year
 
 > Mobile and Tablet Screens are currently being implemented. Will be completed on a later date
 
 ## [Rock Crawlers](https://dtbissy.github.io/atlas-T3-final/landing.html)
 
-Above it the link to Rock Crawlers Application Website. Join us on our biggest expedition YET!
+Above is the link to Rock Crawlers Application Website. Join us on our biggest expedition YET!
 
 ### Authors
 
@@ -24,5 +25,6 @@ Above it the link to Rock Crawlers Application Website. Join us on our biggest e
 
 ### Previous Website
 
-My previous website that was made
-[Rock and Roll](https://dtbissy.github.io/atlas-bootstrap/)
+My previous website that was made by me for Rock and Roll inc.
+
+- [Rock and Roll](https://dtbissy.github.io/atlas-bootstrap/)
