@@ -1,6 +1,6 @@
 # Welcome to Rock Crawlers Expeditions
 
-Welcome to the sister company of the previous Rock and Roll Companys. Rock Crawler Expeditions
+Welcome to the sister company of my previous Rock and Roll Companys. **Rock Crawler Expeditions**
 
 ## Goals
 
