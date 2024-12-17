@@ -19,8 +19,8 @@ Above it the link to Rock Crawlers Application Website. Join us on our biggest e
 
 ### Authors
 
-- [Isaac Edwards](https://github.com/DTBissy/)- (Web Designer, Front-End Engineer, and Back-End Engineer)
-- Akellom Williams(Concept)
+- [Isaac Edwards](https://github.com/DTBissy/) - (Web Designer, Front-End Engineer, and Back-End Engineer)
+- Akellom Williams - (Concept)
 
 ### Previous Website
 
