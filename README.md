@@ -16,7 +16,7 @@ feel more alive and interactable. What I've done while creating this website is:
 
 ## Experience
 
-While making this website, I can't lie, I was burnt out. It was only by forcing myself to continue through the obstacle that I came out very proud of my webiste and myself. It was also the fun of spending 16 hours in one day with friends who were also attempting to get their website to a presentable state. And there is really no saracasm in that statement, I had fun and I'm proud of them as well. All in all, This project wraps up my first year through Atlas and programming, And its really hitting me at the end of the year how far I've come. This probably isn't required in my README for points but im putting it here anyway. Because I want it here.
+While making this website, I can't lie, I was burnt out. It was only by forcing myself to continue through the obstacle that I came out very proud of my website and myself. It was also the fun of spending 16 hours in one day with friends who were also attempting to get their website to a presentable state. And there is really no sarcasm in that statement, I had fun and I'm proud of them as well. All in all, This project wraps up my first year through Atlas and programming, And its really hitting me at the end of the year how far I've come. This probably isn't required in my README for points but im putting it here anyway. Because I want it here.
 
 ## [Rock Crawlers](https://dtbissy.github.io/atlas-T3-final/landing.html)
 
