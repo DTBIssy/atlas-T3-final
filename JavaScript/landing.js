@@ -103,13 +103,26 @@ gsap.from('.page_wrap', {
 $(document).ready(function () {
   let submit = $("button[type=submit]")
 
+  $(".loader").show()
+
   submit.click( function (){
     setData()
   });
 
+  $("#join_us").on('click', function(){
+    setData()
+  })
+
+  $('.accept').on('click', function(){
+    acceptApp()
+  })
+
+  // $('.resubmit').on('click', function(){
+  //   resubApp()
+  // })
+
   $('#submit_button').on('submit', function(event){
     event.preventDefault();
-    window
   })
 
   let username = Cookies.get('FirstName') + " " + Cookies.get("LastName")
@@ -161,8 +174,36 @@ function setData() {
     Cookies.set('About', about)
   }
 
+}
 
-  // Converts
+function acceptApp() {
+  $('.loader').hide();
+
+  $(".app_h").text("Application Accepted! Welcome!")
+}
+
+function resubApp(){
+
+  const relativeUrl = 'landing.html';
+  const absoluteURL = new URL(relativeUrl, window.location.href)
+
+  if(confirm("This will delete your current App form and return you to the application submit form. \nDo you wish to continue?")){
+      localStorage.removeItem('firstname');
+      Cookies.remove('FirstName')
+      localStorage.removeItem('lastname');
+      Cookies.remove('LastName')
+      localStorage.removeItem('email');
+      Cookies.remove('Email')
+      localStorage.removeItem('password');
+      Cookies.remove('Password')
+      localStorage.removeItem('about');
+      Cookies.remove('About')
+      window.location.href = absoluteURL.href;
+
+
+    } else{
+  };
+
 
 }
 

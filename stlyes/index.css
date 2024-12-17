@@ -20,9 +20,13 @@ body {
 
 .nav_wrap {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
+.navi {
+	display: flex;
+	position: fixed;
+}
 .navi img {
 	width: auto;
 	height: 100%;
@@ -31,7 +35,7 @@ body {
 
 ul {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
   position: fixed;
   list-style-type: none;
   /* right: -10px; */
@@ -45,12 +49,9 @@ ul  li {
 	margin-left: auto;
 }
 
-li {
-  float: left;
-}
 
 li a {
-  display: block;
+  display: flex;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -87,6 +88,11 @@ li a:hover {
 .spacer_1 {
 	width: 100%;
 	height: 50vh;
+}
+
+.spacer_2 {
+	width: 100%;
+	height: 15vh;
 }
 
 
@@ -242,11 +248,59 @@ li a:hover {
 }
 
 .app_h {
+	display: flex;
 	padding-top: 2.5vh;
 	padding-left: 10%;
 	padding-bottom: 2.5vh;
 	border-bottom: solid 15px black;
 }
+
+
+.loader{
+	position: absolute;
+	left: 70%;
+	width: 50px;
+	height: 50px;
+	margin: 25px -100px;
+  overflow: hidden;
+	border-radius: 50%;
+  animation: ld-box 2500ms ease-in-out infinite
+
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+	top: 50%;
+	left: 50%;
+  width: 40px;
+  height: 40px;
+  background:lightgreen;
+  border-radius: 50%;
+  margin: -20px -20px;
+  animation: ld-ball 2500ms ease-in-out infinite;
+	opacity: 50%;
+}
+
+@keyframes ld-ball{
+  0%, 100% {
+    transform:scale(1);
+  }
+  25%, 75% {
+    transform:scale(0.5);
+  }
+  50% {
+    transform:scale(1);
+  }
+
+	75% {
+		transform: scale(0.5);
+	}
+
+}
+
+
+
 .app_info {
 	display: flex;
 
@@ -278,5 +332,28 @@ li a:hover {
 	padding-bottom: 5vh;
 	color: #333;
 }
+
+.accept{
+	height: 2vw;
+	margin-right: auto;
+	margin-left: 25vw;
+	margin-top: 2vh;
+	border-radius: 30px;
+	background-color: #C0C0C0;
+	left: 5vw;
+	right: 3vw;
+}
+
+.resubmit{
+	height: 2vw;
+	margin-right: auto;
+	margin-left: 25vw;
+	margin-top: 2vh;
+	border-radius: 30px;
+	background-color: #C0C0C0;
+	left: 5vw;
+	right: 3vw;
+}
+
 
 
