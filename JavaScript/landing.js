@@ -71,9 +71,9 @@ gsap.from('.apply', {
   scrollTrigger:{
     toggleActions: "play none none reverse",
     trigger: ".form-label",
-    start: "top center",
+    start: "top 80%",
     end: "bottom center",
-    //  markers: true,
+     markers: true,
   }, duration: 2, ease: "power4.out", left: "-150vw", opacity: 0,
 })
 
