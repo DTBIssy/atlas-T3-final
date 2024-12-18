@@ -80,11 +80,11 @@ gsap.from('.apply', {
 gsap.from('#apply_sect', {
   scrollTrigger:{
     toggleActions: "play none none reverse",
-    trigger:"#end",
-    start: "top 70%",
+    trigger:"#first_name",
+    start: "top center",
     end: "bottom center",
     // markers: true,
-  }, duration: 2, opacity: 0
+  }, duration: 1, opacity: 0
 })
 
 
