@@ -82,8 +82,6 @@ header {
 }
 
 
-
-
 .gallery h1 {
 	font-size:3rem;
 	color: white;
@@ -119,7 +117,7 @@ header {
 }
 
 .desktopContentSection {
-	min-height:150vh;
+
 	/* outline:1px solid green; */
 	display:flex;
 	flex-direction:column;
@@ -148,12 +146,13 @@ header {
 .desktopPhoto {
 	position:absolute;
 	width:100%;
-	height:100%;
+	height:auto;
 	margin-left: auto;
 }
 
 .desktopPhoto img {
-	width: 100vh;
+	width: 100%;
+	height: auto;
 }
 
 
@@ -177,19 +176,19 @@ header {
 /* Join section */
 
 #Join {
-	height: 100vh;
+	/* height: 100vh; */
 	width: 100%;
 
 }
 
 #apply-div {
-	margin-bottom: 25vh;
+	margin-bottom: 15.078rem ;
 }
 
 .apply {
 	position: relative;
 	left : 10vw;
-	padding-top: 10vh;
+	padding-top: 6.031rem;
 	align-items: flex-start;
 	font-size: 4rem;
 	opacity: 100;
@@ -222,7 +221,6 @@ header {
 
 #join_us {
 	color: black;
-
 }
 
 

@@ -74,25 +74,25 @@ gsap.from('.apply', {
     start: "top 80%",
     end: "bottom center",
      markers: true,
-  }, duration: 2, ease: "power4.out", left: "-150vw", opacity: 0,
+  }, duration: 3, ease: "power4.out", left: "-150vw", opacity: 0,
 })
 
 gsap.from('#apply_sect', {
   scrollTrigger:{
     toggleActions: "play none none reverse",
     trigger:"#first_name",
-    start: "top center",
+    start: "top 100%",
     end: "bottom center",
-    // markers: true,
-  }, duration: 1, opacity: 0
+    markers: true,
+  }, duration: 4, opacity: 0
 })
 
 
 
 
 
-
 $(document).ready(function () {
+
   let submit = $("button[type=submit]")
 
   $(".loader").show()
@@ -227,3 +227,40 @@ function getCookie(name) {
 // function handleReload() {
 //   window.location.href = window.location.href;
 // }
+
+// Lenis
+// const lenis = new Lenis({
+//   duration: 1.2,
+//   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+//   direction: 'vertical', // vertical, horizontal
+//   gestureDirection: 'vertical', // vertical, horizontal, both
+//   smooth: true,
+//   mouseMultiplier: 1,
+//   smoothTouch: false,
+//   touchMultiplier: 2,
+//   infinite: false,
+//   autoResize: true,
+// })
+
+// //get scroll value
+// lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+//   console.log({ scroll, limit, velocity, direction, progress })
+// })
+
+// function raf(time) {
+//   lenis.raf(time)
+//   requestAnimationFrame(raf)
+// }
+
+// requestAnimationFrame(raf)
+
+// function triggerResizeEvent() {
+//   // resizeイベントを作成
+//   const event = new Event('resize');
+//   // イベントをウィンドウにディスパッチ
+//   window.dispatchEvent(event);
+// }
+
+// // この関数を呼び出すことで、resizeイベントが発火し、Lenisが高さを再取得する
+// triggerResizeEvent();
+
