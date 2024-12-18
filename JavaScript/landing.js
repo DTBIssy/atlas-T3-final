@@ -87,15 +87,6 @@ gsap.from('#apply_sect', {
   }, duration: 2, opacity: 0
 })
 
-gsap.from('.page_wrap', {
-  scrollTrigger:{
-    toggleActions: "play none none reverse",
-    trigger:".page_wrap",
-    start: "top 70%",
-    end: "bottom ",
-    // markers: true,
-  }, duration: 3, opacity: 0,
-})
 
 
 
