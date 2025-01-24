@@ -24,7 +24,7 @@ While making this website, I can't lie, I was burnt out. It was only by forcing 
 
 ### Authors
 
-- [Isaac Edwards](https://issybizzy.github.io/atlas-T3-final/) - (Web Designer, Front-End Engineer, and Back-End Engineer)
+- [Isaac Edwards](https://issybizzy.github.io/atlas-T3-final/landing.html) - (Web Designer, Front-End Engineer, and Back-End Engineer)
 - Akellom Williams - (Concept)
 
 ### Previous Website
