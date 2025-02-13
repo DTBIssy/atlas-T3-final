@@ -14,7 +14,7 @@ feel more alive and interactable. What I've done while creating this website is:
 
 > Mobile and Tablet Screens are currently being implemented. Will be completed on a later date
 
-## [Rock Crawlers](https://issybizzy.github.io/atlas-T3-final/)
+## [Rock Crawlers](https://dtbissy.github.io/atlas-T3-final/)
 
 Above is the link to Rock Crawlers Application Website. Join us on our biggest expedition YET!
 
@@ -24,7 +24,7 @@ While making this website, I can't lie, I was burnt out. It was only by forcing 
 
 ### Authors
 
-- [Isaac Edwards](https://github.com/IssyBizzy) - (Web Designer, Front-End Engineer, and Back-End Engineer)
+- [Isaac Edwards](https://github.com/dtbissy) - (Web Designer, Front-End Engineer, and Back-End Engineer)
 - Akellom Williams - (Concept)
 
 ### Previous Website
